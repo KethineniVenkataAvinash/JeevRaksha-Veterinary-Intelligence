@@ -100,12 +100,12 @@ Our Computer Vision models were trained on a highly curated, custom livestock da
 
 ### Species Classification Accuracy
 The foundational model achieves high precision across 6 core livestock species, minimizing cross-species misclassification.
-> ![Species Confusion Matrix](docs/species_confusion_matrix.png)
+<img width="800" height="600" alt="Species Confustion Matrix" src="https://github.com/user-attachments/assets/83d43aaa-a476-4b7f-895c-bd20a8ee9435" />
 
 ### Two-Stage Disease Detection
 The specialized dermatological models demonstrate robust sensitivity to critical pathologies, drastically minimizing false negatives for highly contagious diseases.
-> ![Stage 1 Disease Matrix](docs/stage1_confusion_matrix.png)
-> ![Stage 2 Disease Matrix](docs/stage2_confusion_matrix.png)
+
+<img width="600" height="500" alt="Stage 1 Disease Matrix" src="https://github.com/user-attachments/assets/be6a0904-17e6-49c2-a305-4ef4d809e937" /><img width="600" height="500" alt="Stage 2 Disease Matrix" src="https://github.com/user-attachments/assets/e302f80a-be9a-4204-84d4-4a5f166123b4" />
 
 ---
 
