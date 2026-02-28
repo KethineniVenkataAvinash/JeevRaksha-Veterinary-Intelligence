@@ -1,0 +1,42 @@
+@import "tailwindcss";
+@plugin "tailwindcss-animate";
+
+@theme {
+  /* Official JeevRaksha Branding Colors */
+  --color-vet-blue-50: #f0f7ff;
+  --color-vet-blue-100: #e0effe;
+  --color-vet-blue-600: #2563eb;
+  --color-vet-blue-800: #1e40af;
+  --color-vet-blue-900: #1e3a8a;
+  
+  --color-vet-green-50: #f0fdf4;
+  --color-vet-green-100: #dcfce7;
+  --color-vet-green-600: #16a34a;
+  --color-vet-green-800: #166534;
+}
+
+/* Force Light Mode to prevent black screens */
+:root {
+  --background: #f8fafc;
+  --foreground: #0f172a;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+}
+
+/* Advanced Print Engine Logic */
+@media print {
+  body {
+    background-color: white !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+  .print\:hidden {
+    display: none !important;
+  }
+  .print\:m-0 {
+    margin: 0 !important;
+  }
+}
