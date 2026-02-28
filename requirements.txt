@@ -1,0 +1,27 @@
+# Web Framework & API
+Flask==3.0.0
+Flask-Cors==4.0.0
+Werkzeug==3.0.0
+
+# PyTorch & Machine Learning
+torch
+torchvision
+torchaudio
+
+# Computer Vision & Image Processing
+ultralytics
+opencv-python-headless
+Pillow
+
+# Audio Processing
+librosa
+
+# Data Science & Metrics
+numpy
+scikit-learn
+matplotlib
+seaborn
+tqdm
+
+# Hugging Face (Optional models used in app.py)
+transformers
