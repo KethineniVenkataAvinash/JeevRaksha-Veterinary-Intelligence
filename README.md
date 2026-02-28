@@ -1,76 +1,84 @@
 # JeevRaksha-Veterinary-Intelligence
 AI-Based Early Livestock Disease Detection &amp; Decision Support System
 
-Here is the ultimate, highly exhaustive `README.md` file for your GitHub repository. It integrates every single feature, module, and technical specification you requested—from the NLP DERT system and teleconsultation radar to the role-based authentication and EfficientNet confusion matrices.
-
-You can copy and paste this entire code block directly into your `README.md` file on GitHub.
-
----
-
 # 🐾 JeevRaksha: Multimodal AI Veterinary Intelligence Engine
 
 <div align="center">
-  <img src="https://img.shields.io/badge/Frontend-Next.js%20%7C%20React-blue.svg" alt="Frontend">
-  <img src="https://img.shields.io/badge/Database-Supabase-3ECF8E.svg" alt="Supabase">
-  <img src="https://img.shields.io/badge/AI%20Engine-PyTorch%20%7C%20Flask-orange.svg" alt="AI">
-  <img src="https://img.shields.io/badge/Status-Active-brightgreen.svg" alt="Status">
+  <img src="https://img.shields.io/badge/Frontend-Next.js%20%7C%20Tailwind-blue.svg" alt="Frontend">
+  <img src="https://img.shields.io/badge/Backend-Flask%20%7C%20Supabase-3ECF8E.svg" alt="Backend">
+  <img src="https://img.shields.io/badge/AI%20Vision-EfficientNetV2%20%7C%20YOLOv8-orange.svg" alt="Vision">
+  <img src="https://img.shields.io/badge/AI%20Audio-1D%20CNN%20%7C%20Librosa-red.svg" alt="Audio">
+  <img src="https://img.shields.io/badge/AI%20NLP-BERT-yellow.svg" alt="NLP">
+  <img src="https://img.shields.io/badge/Hackathon-Quantumard%202026-purple.svg" alt="Hackathon">
 </div>
 
 > **An Advanced, Multimodal AI-Based Early Livestock Disease Detection & Decision Support System**
 
-**JeevRaksha** is a comprehensive Veterinary Intelligence platform built to eradicate the "Diagnostic Gap" in rural agriculture. By combining Computer Vision, Audio Anomaly Detection, Spatial Geometry, and Critical NLP, JeevRaksha delivers a complete ecosystem for disease triage, teleconsultation, and advanced herd analytics.
+**JeevRaksha** is a comprehensive, cloud-powered Veterinary Intelligence platform built to eradicate the "Diagnostic Gap" in rural agriculture. By simultaneously fusing Computer Vision, Audio Anomaly Detection, Spatial Geometry, and Critical NLP, JeevRaksha delivers a complete ecosystem for disease triage, teleconsultation, and advanced herd analytics directly to the hands of farmers and Gau Sevaks.
 
 ---
 
 ## 📑 Table of Contents
-1. [Core Modules & Features](#-core-modules--features)
-2. [User Roles & Authentication](#-user-roles--authentication)
-3. [Deep Dive: AI Diagnostics & Smart AI](#-deep-dive-ai-diagnostics--smart-ai)
+1. [Core Modules & Dashboard Features](#-core-modules--dashboard-features)
+2. [Deep Dive: Multimodal AI Engine](#-deep-dive-multimodal-ai-engine)
+3. [User Roles, Auth & Radar](#-user-roles-auth--radar)
 4. [Localization, Settings & UI Design](#-localization-settings--ui-design)
 5. [Model Performance & Research](#-model-performance--research-confusion-matrices)
-6. [System Architecture](#-system-architecture)
+6. [Full-Stack Architecture](#-full-stack-architecture)
 7. [Getting Started (Clone & Run)](#-getting-started-clone--run)
+8. [The Team](#-the-team)
 
 ---
 
-## 🚀 Core Modules & Features
+## 🚀 Core Modules & Dashboard Features
 
-### 📊 The Interactive Dashboard
+### 📊 The Interactive Smart Dashboard
 The central hub for daily farm monitoring, designed for immediate situational awareness:
-* **Seasonal Threats & Watch:** Real-time, location-based widgets displaying active seasonal viral threats (e.g., monsoon-induced FMD outbreaks) complete with reference photos.
-* **Recent Diagnostic Activities:** A synchronized log of the latest herd scans, flagging critical health status changes instantly.
+* **Seasonal Threats & Watch:** Real-time, location-based widgets displaying active seasonal viral threats (e.g., monsoon-induced FMD outbreaks) complete with reference photos and local prevalence rates.
+* **Recent Diagnostic Activities:** A synchronized log of the latest herd scans, instantly flagging critical health status changes requiring immediate intervention.
 * **Smart AI Analytics & History:** A comprehensive analytical timeline tracking the history of scans, recovery rates, and predictive analytics for herd health trends.
 
 ### 🏥 Teleconsultation & Radar Chat
-* **Live Vet Connect:** Direct teleconsultation capabilities integrating farmers with certified veterinarians.
+* **Live Teleconsultation:** Direct, in-app consultation capabilities seamlessly integrating farmers with certified veterinarians.
 * **Location-Based Radar:** Geolocation services to instantly find and chat with nearby **Traders**, **Veterinarians**, and **Gau Sevaks** based on proximity.
 
-### 📚 Clinical Guide & About Section
+### 📚 Clinical Guide & Safety Protocols
 * **Comprehensive Clinical Guide:** A built-in veterinary encyclopedia detailing symptoms, first-aid protocols, and safety measures for a variety of livestock species and diseases.
-* **Safety & Best Practices:** Dedicated sections outlining bio-security measures, quarantine protocols, and safe handling of infected livestock.
-* **About the Technology:** An in-app technical breakdown explaining our use of Computer Vision, Voice Activity detection, and Biometric estimation to build trust with the users.
+* **Bio-Security & Quarantine:** Dedicated sections outlining crucial bio-security measures, strict quarantine protocols, and the safe handling of infected livestock to prevent herd-wide spread.
+* **About the Technology:** An in-app technical breakdown explaining how our AI models (Vision, Voice Activity, Biometrics) analyze data, building algorithmic trust with rural users.
 
 ---
 
-## 🔐 User Roles & Authentication
-Built on top of **Supabase Auth**, the login and sign-up pages are highly dynamic and role-specific:
+## 🧠 Deep Dive: Multimodal AI Engine
+
+Our AI Inference Engine is powered by a high-speed Flask backend that routes complex multimodal payloads through specialized, state-of-the-art neural networks:
+
+### 1. Computer Vision (EfficientNetV2)
+* **Species Isolation:** A fine-tuned `EfficientNetV2` model accurately classifies the animal into 6 core species categories.
+* **Two-Stage Disease Detection:** Images pass through a specialized two-stage Convolutional Neural Network pipeline (`stage1_best` and `stage2_best`) for precise dermatological lesion detection, isolating severe pathologies like **Lumpy Skin Disease** and **Foot-and-Mouth Disease (FMD)**.
+
+### 2. Biometric Estimation (Ultralytics YOLOv8)
+* **Instance Segmentation:** Integration of a custom `YOLOv8n-seg` (Ultralytics) model to extract precise animal spatial contours and bounding box geometry.
+* **Hardware-Free Weight & BCS:** By analyzing pixel density and structural contours, the system algorithmically estimates the animal's **Weight (kg)** and **Body Condition Score (BCS)** without requiring immobile physical scales.
+
+### 3. Voice Activity & Audio Intelligence (1D CNN & librosa)
+* **Acoustic Feature Extraction:** Raw audio clips are mathematically processed via the `librosa` library into Mel-frequency cepstral coefficients (MFCCs) and spectrograms.
+* **PyTorch Autoencoder:** A custom **1D CNN Autoencoder** attempts to reconstruct the acoustic signature based on its training of *healthy* respiratory patterns.
+* **MSE Thresholding:** Invisible lung anomalies and coughing cause the neural reconstruction to fail, spiking the Mean Squared Error (MSE) and instantly flagging the respiratory infection.
+
+### 4. Critical NLP (BERT / DERT System)
+* **Diagnostic Early Response & Triage (DERT):** The system utilizes a **BERT-based Natural Language Processing (NLP)** architecture to analyze user-inputted symptoms (via text or the voice assistant). It semantically parses these descriptions and combines them with the visual/audio data to accurately rank threat severity and recommend immediate actions.
+
+---
+
+## 🔐 User Roles, Auth & Radar
+Built on top of **Supabase**, the login and sign-up pages are highly dynamic, secure, and role-specific:
 
 * **Role-Based Access Control (RBAC):** Users must select their profile type during sign-up:
   1. **Farmer:** Simplified UI focused on rapid scanning, local alerts, and connecting with vets.
-  2. **Veterinarian:** Advanced UI with teleconsultation queues, deep diagnostic data, and prescription capabilities.
+  2. **Veterinarian:** Advanced UI with teleconsultation queues, deep diagnostic data access, and prescription capabilities.
   3. **Admin:** System oversight, epidemiological outbreak mapping, and user management.
-* **Location & Profile Setup:** Sign-up includes location-based tagging to fuel the local Radar and Seasonal Threat mapping.
-
----
-
-## 🧠 Deep Dive: AI Diagnostics & Smart AI
-
-Our AI Inference Engine utilizes a multimodal approach to deliver clinical-grade diagnostics:
-
-* **Computer Vision (EfficientNet):** A custom-trained, two-stage Convolutional Neural Network pipeline for precise dermatological lesion detection (e.g., Lumpy Skin Disease).
-* **Biometric Estimation (YOLOv8):** Advanced visual geometry and spatial instance segmentation to estimate livestock Weight (kg) and Body Condition Score (BCS) without physical scales.
-* **Voice Activity & Audio Processing:** PyTorch-based Autoencoders analyze respiratory MFCC spectrograms to detect invisible coughing and lung anomalies.
-* **Critical NLP & DERT System:** The **Diagnostic Early Response & Triage (DERT)** system utilizes Natural Language Processing (NLP) to analyze user-inputted symptoms (via text or voice assistant), combining it with visual data to rank threat severity and recommend immediate actions.
+* **Location-Based Setup:** Sign-up includes precise location tagging to fuel the local Radar, Chat, and Seasonal Threat mapping features.
 
 ---
 
@@ -79,34 +87,34 @@ Our AI Inference Engine utilizes a multimodal approach to deliver clinical-grade
 JeevRaksha is built to break digital literacy barriers in deep rural environments.
 
 * **Native Display Translation:** The entire interface dynamically translates from English into regional languages: **Telugu, Tamil, and Malayalam** (alongside Hindi and Kannada).
-* **Floating AI Voice Assistant:** Voice-guided navigation and symptom reporting for users unable to type.
-* **UI Design Preferences:** A beautifully crafted, responsive UI (Tailwind CSS) offering contrast adjustments and theme toggles for outdoor visibility (Sunlight/Dark modes).
-* **Advanced Settings:** Complete control over **Security** (password updates, session management) and **Notifications** (SMS/Push alerts for local disease outbreaks).
+* **Floating AI Voice Assistant:** Persistent voice-guided navigation and symptom reporting for users unable to type or read complex menus.
+* **Advanced UI Design:** A beautifully crafted, responsive UI built with Tailwind CSS, offering contrast adjustments and theme toggles (Sunlight/Dark modes) for high visibility in outdoor farm environments.
+* **Security & Notifications:** Advanced settings grant users complete control over **Security** (password updates, session management) and **Notifications** (SMS/Push alerts for local disease outbreaks).
 
 ---
 
 ## 📈 Model Performance & Research (Confusion Matrices)
 
-Our Computer Vision models were trained on a highly curated, custom livestock dataset using `EfficientNet` architectures. 
+Our Computer Vision models were trained on a highly curated, custom livestock dataset using `EfficientNetV2` architectures. 
 
-*(Note: Replace the placeholder images below with the actual output plots from your `train_stage1.py` and `train_species2.py` scripts!)*
+*(Note: The following are analytical outputs from our training scripts)*
 
 ### Species Classification Accuracy
-The foundational model achieves high precision across 6 core livestock species.
-> `![Species Confusion Matrix](link_to_your_species_confusion_matrix_image.png)`
+The foundational model achieves high precision across 6 core livestock species, minimizing cross-species misclassification.
+> `![Species Confusion Matrix](docs/species_confusion_matrix.png)`
 
 ### Two-Stage Disease Detection
-The specialized dermatological models demonstrate robust sensitivity to critical pathologies, minimizing false negatives for highly contagious diseases.
-> `![Stage 1 Disease Matrix](link_to_your_stage1_confusion_matrix_image.png)`
-> `![Stage 2 Disease Matrix](link_to_your_stage2_confusion_matrix_image.png)`
+The specialized dermatological models demonstrate robust sensitivity to critical pathologies, drastically minimizing false negatives for highly contagious diseases.
+> `![Stage 1 Disease Matrix](docs/stage1_confusion_matrix.png)`
+> `![Stage 2 Disease Matrix](docs/stage2_confusion_matrix.png)`
 
 ---
 
-## 🏗️ System Architecture
+## 🏗️ Full-Stack Architecture
 
-* **Frontend App:** **Next.js (React)** with Tailwind CSS for a lightning-fast, mobile-first Web App.
-* **Backend & Database:** **Supabase** handling PostgreSQL relational data, secure authentication, and real-time scan history synchronization.
-* **AI Inference Engine:** A high-speed **Flask** API routing multimodal payloads to PyTorch and Ultralytics (YOLO) deep learning pipelines.
+* **Frontend Web App:** **Next.js (React)** with Tailwind CSS for a lightning-fast, mobile-first interface.
+* **Backend & Database:** **Supabase** handling PostgreSQL relational data, secure authentication, Row Level Security (RLS), and real-time scan history synchronization.
+* **AI Inference Gateway:** A high-speed **Flask (Python)** API routing multimodal payloads to the PyTorch, Ultralytics, and Hugging Face (BERT) deep learning pipelines.
 
 ---
 
@@ -138,7 +146,7 @@ NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
 
 ```
 
-Start the frontend server:
+Start the frontend development server:
 
 ```bash
 npm run dev
@@ -158,7 +166,7 @@ pip install -r requirements.txt
 
 ```
 
-*Note: Ensure you have downloaded the heavy PyTorch model weights (`.pth` and `.pt` files) and placed them in the root directory.*
+*Note: Ensure you have downloaded the heavy PyTorch and YOLO model weights (`.pth` and `.pt` files) from our external drive and placed them in the root directory.*
 
 Start the backend API:
 
@@ -170,7 +178,17 @@ python app.py
 
 ---
 
-*Developed with dedication for the future of rural agriculture and veterinary science.*
+## 👥 The Team
+
+Engineered with dedication for the future of rural agriculture by students from the **Vellore Institute of Technology (VIT), Bhopal**.
+
+* **Kethineni Venkata Avinash** (Team Leader & Senior AI Engineer)
+* **Guggilam Bala Yoshik** (Core Developer)
+* **Samudrala Manjunadh** (Core Developer)
+
+---
+
+*Official Submission for the Quantumard National Hackathon 2026.*
 
 ```
 
