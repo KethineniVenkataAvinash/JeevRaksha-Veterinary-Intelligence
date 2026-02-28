@@ -9,7 +9,7 @@
   <img src="https://img.shields.io/badge/AI%20NLP-BERT-yellow.svg" alt="NLP">
 </div>
 
-**JeevRaksha** is a comprehensive, cloud-powered Veterinary Intelligence platform built to eradicate the "Diagnostic Gap" in rural agriculture. By simultaneously fusing Computer Vision, Audio Anomaly Detection, Spatial Geometry, and Critical NLP, JeevRaksha delivers a complete ecosystem for disease triage, teleconsultation, and advanced herd analytics directly to the hands of farmers and Gau Sevaks.
+**JeevRaksha** is a comprehensive, cloud-powered Veterinary Intelligence platform built to eradicate the "Diagnostic Gap" in rural agriculture. By simultaneously fusing Computer Vision, Audio Anomaly Detection, Spatial Geometry, and Critical NLP, JeevRaksha delivers a complete ecosystem for disease triage, teleconsultation, and advanced herd analytics directly to the hands of farmers.
 
 ---
 
