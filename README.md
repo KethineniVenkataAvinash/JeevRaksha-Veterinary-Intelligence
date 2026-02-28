@@ -1,7 +1,5 @@
-# JeevRaksha-Veterinary-Intelligence
-AI-Based Early Livestock Disease Detection &amp; Decision Support System
-
-# 🐾 JeevRaksha: Multimodal AI Veterinary Intelligence Engine
+# JeevRaksha: Multimodal AI Veterinary Intelligence Engine
+> **AI-Based Early Livestock Disease Detection & Decision Support System**
 
 <div align="center">
   <img src="https://img.shields.io/badge/Frontend-Next.js%20%7C%20Tailwind-blue.svg" alt="Frontend">
@@ -11,44 +9,44 @@ AI-Based Early Livestock Disease Detection &amp; Decision Support System
   <img src="https://img.shields.io/badge/AI%20NLP-BERT-yellow.svg" alt="NLP">
 </div>
 
-> **An Advanced, Multimodal AI-Based Early Livestock Disease Detection & Decision Support System**
-
 **JeevRaksha** is a comprehensive, cloud-powered Veterinary Intelligence platform built to eradicate the "Diagnostic Gap" in rural agriculture. By simultaneously fusing Computer Vision, Audio Anomaly Detection, Spatial Geometry, and Critical NLP, JeevRaksha delivers a complete ecosystem for disease triage, teleconsultation, and advanced herd analytics directly to the hands of farmers and Gau Sevaks.
 
 ---
 
-## 📑 Table of Contents
+## Table of Contents
 1. [Core Modules & Dashboard Features](#-core-modules--dashboard-features)
 2. [Deep Dive: Multimodal AI Engine](#-deep-dive-multimodal-ai-engine)
 3. [User Roles, Auth & Radar](#-user-roles-auth--radar)
 4. [Localization, Settings & UI Design](#-localization-settings--ui-design)
 5. [Model Performance & Research](#-model-performance--research-confusion-matrices)
 6. [Full-Stack Architecture](#-full-stack-architecture)
-7. [Getting Started (Clone & Run)](#-getting-started-clone--run)
-8. [The Team](#-the-team)
+7. [Website Screenshots](#-website-screenshots)
+8. [Reports](#-reports)
+9. [Getting Started (Clone & Run)](#-getting-started-clone--run)
+10. [The Team](#-the-team)
 
 ---
 
-## 🚀 Core Modules & Dashboard Features
+##  Core Modules & Dashboard Features
 
-### 📊 The Interactive Smart Dashboard
+### The Interactive Smart Dashboard
 The central hub for daily farm monitoring, designed for immediate situational awareness:
 * **Seasonal Threats & Watch:** Real-time, location-based widgets displaying active seasonal viral threats (e.g., monsoon-induced FMD outbreaks) complete with reference photos and local prevalence rates.
 * **Recent Diagnostic Activities:** A synchronized log of the latest herd scans, instantly flagging critical health status changes requiring immediate intervention.
 * **Smart AI Analytics & History:** A comprehensive analytical timeline tracking the history of scans, recovery rates, and predictive analytics for herd health trends.
 
-### 🏥 Teleconsultation & Radar Chat
+### Teleconsultation & Radar Chat
 * **Live Teleconsultation:** Direct, in-app consultation capabilities seamlessly integrating farmers with certified veterinarians.
 * **Location-Based Radar:** Geolocation services to instantly find and chat with nearby **Traders**, **Veterinarians**, and **Gau Sevaks** based on proximity.
 
-### 📚 Clinical Guide & Safety Protocols
+### Clinical Guide & Safety Protocols
 * **Comprehensive Clinical Guide:** A built-in veterinary encyclopedia detailing symptoms, first-aid protocols, and safety measures for a variety of livestock species and diseases.
 * **Bio-Security & Quarantine:** Dedicated sections outlining crucial bio-security measures, strict quarantine protocols, and the safe handling of infected livestock to prevent herd-wide spread.
 * **About the Technology:** An in-app technical breakdown explaining how our AI models (Vision, Voice Activity, Biometrics) analyze data, building algorithmic trust with rural users.
 
 ---
 
-## 🧠 Deep Dive: Multimodal AI Engine
+## Deep Dive: Multimodal AI Engine
 
 Our AI Inference Engine is powered by a high-speed Flask backend that routes complex multimodal payloads through specialized, state-of-the-art neural networks:
 
@@ -70,7 +68,7 @@ Our AI Inference Engine is powered by a high-speed Flask backend that routes com
 
 ---
 
-## 🔐 User Roles, Auth & Radar
+## User Roles, Auth & Radar
 Built on top of **Supabase**, the login and sign-up pages are highly dynamic, secure, and role-specific:
 
 * **Role-Based Access Control (RBAC):** Users must select their profile type during sign-up:
@@ -81,7 +79,7 @@ Built on top of **Supabase**, the login and sign-up pages are highly dynamic, se
 
 ---
 
-## 🌍 Localization, Settings & UI Design
+## Localization, Settings & UI Design
 
 JeevRaksha is built to break digital literacy barriers in deep rural environments.
 
@@ -92,7 +90,7 @@ JeevRaksha is built to break digital literacy barriers in deep rural environment
 
 ---
 
-## 📈 Model Performance & Research (Confusion Matrices)
+## Model Performance & Research (Confusion Matrices)
 
 Our Computer Vision models were trained on a highly curated, custom livestock dataset using `EfficientNetV2` architectures. 
 
@@ -100,16 +98,19 @@ Our Computer Vision models were trained on a highly curated, custom livestock da
 
 ### Species Classification Accuracy
 The foundational model achieves high precision across 6 core livestock species, minimizing cross-species misclassification.
-<img width="800" height="600" alt="Species Confustion Matrix" src="https://github.com/user-attachments/assets/83d43aaa-a476-4b7f-895c-bd20a8ee9435" />
+
+<img width="800" alt="Species Confusion Matrix" src="https://github.com/user-attachments/assets/83d43aaa-a476-4b7f-895c-bd20a8ee9435" />
 
 ### Two-Stage Disease Detection
 The specialized dermatological models demonstrate robust sensitivity to critical pathologies, drastically minimizing false negatives for highly contagious diseases.
 
-<img width="600" height="500" alt="Stage 1 Disease Matrix" src="https://github.com/user-attachments/assets/be6a0904-17e6-49c2-a305-4ef4d809e937" /><img width="600" height="500" alt="Stage 2 Disease Matrix" src="https://github.com/user-attachments/assets/e302f80a-be9a-4204-84d4-4a5f166123b4" />
+<img width="600" alt="Stage 1 Disease Matrix" src="https://github.com/user-attachments/assets/be6a0904-17e6-49c2-a305-4ef4d809e937" />
+<br><br>
+<img width="600" alt="Stage 2 Disease Matrix" src="https://github.com/user-attachments/assets/e302f80a-be9a-4204-84d4-4a5f166123b4" />
 
 ---
 
-## 🏗️ Full-Stack Architecture
+## Full-Stack Architecture
 
 * **Frontend Web App:** **Next.js (React)** with Tailwind CSS for a lightning-fast, mobile-first interface.
 * **Backend & Database:** **Supabase** handling PostgreSQL relational data, secure authentication, Row Level Security (RLS), and real-time scan history synchronization.
@@ -117,7 +118,36 @@ The specialized dermatological models demonstrate robust sensitivity to critical
 
 ---
 
-## 💻 Getting Started (Clone & Run)
+## Website Screenshots
+
+<img width="800" alt="Dashboard View 1" src="https://github.com/user-attachments/assets/7c75c348-8512-4e5d-a605-7c366bc0bd79" />
+<br><br>
+
+<img width="800" alt="Dashboard View 2" src="https://github.com/user-attachments/assets/baf5f4e5-3994-411a-9734-ab16a749bc46" />
+<br><br>
+
+<img width="800" alt="Dashboard View 3" src="https://github.com/user-attachments/assets/48053e30-6ad9-4530-92d9-f8bd7e5f3d83" />
+<br><br>
+
+<img width="800" alt="Dashboard View 4" src="https://github.com/user-attachments/assets/5f4eb64c-7e54-4c53-9dc6-5bd37e9cc5ba" />
+<br><br>
+
+<img width="800" alt="Dashboard View 5" src="https://github.com/user-attachments/assets/137eed74-1c4e-4f83-a795-a314d34138f3" />
+<br><br>
+
+<img width="800" alt="Dashboard View 6" src="https://github.com/user-attachments/assets/f02845c5-2604-473a-83bc-e20be28d338f" />
+
+---
+
+## Reports
+
+**[Download the Official Report (PDF)](https://github.com/user-attachments/files/25621532/Report.pdf)**
+
+<img width="800" alt="Report Preview" src="https://github.com/user-attachments/assets/cb44a6e1-515a-4f0c-90d7-47b9670117ac" />
+
+---
+
+## Getting Started (Clone & Run)
 
 Follow these steps to deploy the complete JeevRaksha ecosystem locally.
 
@@ -177,7 +207,7 @@ python app.py
 
 ---
 
-## 👥 The Team
+## The Team
 
 Engineered with dedication for the future of rural agriculture by students from the **Vellore Institute of Technology (VIT), Bhopal**.
 
@@ -190,5 +220,7 @@ Engineered with dedication for the future of rural agriculture by students from 
 *Official Submission for the Quantumard National Hackathon 2026.*
 
 ```
+
+This is completely ready to go! Would you like me to help with anything else regarding your Hackathon submission?
 
 ```
