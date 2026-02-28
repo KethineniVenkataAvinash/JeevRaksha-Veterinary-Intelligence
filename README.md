@@ -147,6 +147,44 @@ The specialized dermatological models demonstrate robust sensitivity to critical
 
 ---
 
+---
+##  Complete Project Structure
+
+jeevraksha/
+│
+├── app.py                            # Main Flask API & Inference Engine Gateway
+├── requirements.txt                  # Python Backend Dependencies
+├── package.json                      # Next.js Frontend Dependencies
+├── tailwind.config.ts                # UI Branding configuration
+├── middleware.ts                     # Supabase Auth Route Protection
+│
+├── Machine_Learning_Models/          # Hosted externally due to GitHub limits
+│   ├── best_species_model_finetuned.pth
+│   ├── stage1_best_finetuned.pth
+│   ├── stage2_best_finetuned.pth
+│   ├── yolov8n-seg.pt
+│   ├── audio_autoencoder.pth
+│   └── audio_threshold.npy
+│
+├── Model_Training_Scripts/           # Custom PyTorch training pipelines
+│   ├── train_audio_anomaly.py
+│   ├── train_species2.py
+│   ├── train_stage1.py
+│   └── train_stage2.py
+│
+└── app/                              # Next.js App Router Frontend
+    ├── auth/                         # Authentication callbacks
+    ├── login/                        # Secure User Login / Signup
+    ├── diagnose/                     # Multimodal Scan Interface (Camera/Mic)
+    ├── reports/                      # AI Generated JSON Health Reports
+    ├── history/                      # Supabase synced scan history dashboard
+    ├── settings/                     # User localization preferences
+    ├── guide/                        # App usage instructions
+    ├── update-password/              # Auth management
+    ├── layout.tsx                    # Global layout & Floating AI Voice Assistant
+    └── page.tsx                      # Main Statistical Dashboard
+
+---
 ## Getting Started (Clone & Run)
 
 Follow these steps to deploy the complete JeevRaksha ecosystem locally.
