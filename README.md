@@ -192,7 +192,7 @@ Follow these steps to deploy the complete JeevRaksha ecosystem locally.
 ### 1. Clone the Repository
 ```bash
 
-https://github.com/KethineniVenkataAvinash/JeevRaksha-Veterinary-Intelligence.git
+gh repo clone KethineniVenkataAvinash/JeevRaksha-Veterinary-Intelligence
 
 ```
 
