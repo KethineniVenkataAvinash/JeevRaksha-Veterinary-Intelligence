@@ -191,8 +191,8 @@ Follow these steps to deploy the complete JeevRaksha ecosystem locally.
 
 ### 1. Clone the Repository
 ```bash
-git clone [https://github.com/YOUR_USERNAME/JeevRaksha.git](https://github.com/YOUR_USERNAME/JeevRaksha.git)
-cd JeevRaksha
+
+https://github.com/KethineniVenkataAvinash/JeevRaksha-Veterinary-Intelligence.git
 
 ```
 
@@ -234,6 +234,7 @@ pip install -r requirements.txt
 ```
 
 *Note: Ensure you have downloaded the heavy PyTorch and YOLO model weights (`.pth` and `.pt` files) from our external drive and placed them in the root directory.*
+https://drive.google.com/drive/folders/1OP03SAv2DTILw8vMcha4QO_NaEQGljtJ?usp=sharing
 
 Start the backend API:
 
