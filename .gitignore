@@ -1,0 +1,27 @@
+# Environments
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Node/Next.js
+node_modules/
+.next/
+out/
+build/
+
+# Python/Flask
+__pycache__/
+venv/
+env/
+*.pyc
+
+# ML Models & Large Files )
+*.pth
+*.pt
+*.npy
+
+# OS Files
+.DS_Store
+Thumbs.db
