@@ -7,7 +7,6 @@ You can copy and paste this entire code block directly into your `README.md` fil
 
 ---
 
-```markdown
 # 🐾 JeevRaksha: Multimodal AI Veterinary Intelligence Engine
 
 <div align="center">
