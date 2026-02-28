@@ -9,7 +9,6 @@ AI-Based Early Livestock Disease Detection &amp; Decision Support System
   <img src="https://img.shields.io/badge/AI%20Vision-EfficientNetV2%20%7C%20YOLOv8-orange.svg" alt="Vision">
   <img src="https://img.shields.io/badge/AI%20Audio-1D%20CNN%20%7C%20Librosa-red.svg" alt="Audio">
   <img src="https://img.shields.io/badge/AI%20NLP-BERT-yellow.svg" alt="NLP">
-  <img src="https://img.shields.io/badge/Hackathon-Quantumard%202026-purple.svg" alt="Hackathon">
 </div>
 
 > **An Advanced, Multimodal AI-Based Early Livestock Disease Detection & Decision Support System**
@@ -101,12 +100,12 @@ Our Computer Vision models were trained on a highly curated, custom livestock da
 
 ### Species Classification Accuracy
 The foundational model achieves high precision across 6 core livestock species, minimizing cross-species misclassification.
-> `![Species Confusion Matrix](docs/species_confusion_matrix.png)`
+> ![Species Confusion Matrix](docs/species_confusion_matrix.png)
 
 ### Two-Stage Disease Detection
 The specialized dermatological models demonstrate robust sensitivity to critical pathologies, drastically minimizing false negatives for highly contagious diseases.
-> `![Stage 1 Disease Matrix](docs/stage1_confusion_matrix.png)`
-> `![Stage 2 Disease Matrix](docs/stage2_confusion_matrix.png)`
+> ![Stage 1 Disease Matrix](docs/stage1_confusion_matrix.png)
+> ![Stage 2 Disease Matrix](docs/stage2_confusion_matrix.png)
 
 ---
 
