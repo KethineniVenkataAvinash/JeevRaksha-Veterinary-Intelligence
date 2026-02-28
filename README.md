@@ -250,9 +250,9 @@ python app.py
 
 Engineered with dedication for the future of rural agriculture by students from the **Vellore Institute of Technology (VIT), Bhopal**.
 
-* **Kethineni Venkata Avinash** (Team Leader & Senior AI Engineer)
-* **Guggilam Bala Yoshik** (Core Developer)
-* **Samudrala Manjunadh** (Core Developer)
+* **Kethineni Venkata Avinash** 
+* **Guggilam Bala Yoshik** 
+* **Samudrala Manjunadh** 
 
 ---
 
